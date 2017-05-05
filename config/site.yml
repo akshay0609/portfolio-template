@@ -1,0 +1,23 @@
+name: ror-portfolio
+locales: [en]
+domains: [43.241.63.15]
+timezone: UTC
+seo_title: ''
+meta_keywords: ''
+meta_description: ''
+robots_txt: ''
+metafields:
+  address:
+    street: ''
+    city: ''
+    country: ''
+  social:
+    facebook: ''
+    google: www.neosofttech.com
+    twitter: ''
+    linkedin: ''
+    dribbble: ''
+  theme:
+    main_color: "#533872"
+    alt_color: "#5f82de"
+metafields_ui: {}

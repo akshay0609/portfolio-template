@@ -1,0 +1,76 @@
+- OrganTree:
+    _slug: sample-1
+    name: OrganTree
+    image: "/samples/content_entries/Screenshot_from_2017-03-30_13_31_09.png"
+    description: '<p>Organtree is a web-based application designed for a new approach
+      to saving lives through organ donation.Help to save lives by donating your organs
+      when you pass on and have your loved ones compensated for their associated.</p><p
+      class="wysiwyg-text-align-center">Entities / Modules<br>1: Donor 2: Hospitals 3:
+      Recipients</p><p>Donor: An individual wishing to become an Organ tree donor
+      goes through a quick registration process and then nominates his/her beneficiary.</p><p>Hospitals:
+      Hospital staff can access the secure organtree in order to match up registered
+      recipients and donors.They are the only parties who can view donor''s and recipient''s
+      personal details.</p><p>Recipients: Registered recipients become eligible to
+      receive donated Organtree donors if they choose to accept a donated organ, they
+      compensate the donors beneficiery a &nbsp;set amount.</p>'
+    ruby_version: 2.3.0
+    rails_version: 4.2.0
+    other_technology: HTML, CSS, Jquery
+    database: PostgresDB
+    rubygems_used: devise, bottstrap-sass
+    versioning: GIT
+    client: Hillel
+    date: '2016-12-22'
+    category: Interface
+- Trainersvault:
+    _slug: trainersvault
+    name: Trainersvault
+    image: "/samples/content_entries/Digital_Item_Profile.png"
+    description: "<p></p><p>TrainersVault application connects Users and Trainers.
+      Users can search, book events and pay online. Trainers can create workout sessions
+      which includes Cardio, Weight Loss, Yoga, Pilates, Endurance, etc. User can
+      select the workout as per their need. User can comment and write reviews about
+      the booked event.</p><p>There are three types of sessions:</p><p>i) private
+      sessions: These are one to one sessions where the user can train privately with
+      a trainer.</p><p>ii) bootcamp sessions: These are sessions in which multiple
+      users can join the sessions and train together. Although each session has a
+      limit to the number of users.</p><p>iii) online sessions: These are online sessions
+      in which the user can join the session and then train through the videos and
+      other documents attached by the trainer.</p><p>Role Features</p><p>Admin Manage
+      users and trainers, tracking support, suspend users.</p><p>Normal user Manage
+      user profiles, book events and choose favorite style of workout.</p><p>Trainer
+      Mange events, create workout sessions.</p><p></p>"
+    ruby_version: 2.3.0
+    rails_version: 4.2.0
+    other_technology: HTML, CSS, Jquery
+    database: PostgresDB
+    rubygems_used: devise, json, carmen-rails, pg, rollbar, omniauth-facebook, stripe,
+      instagram2
+    versioning: GIT
+    client: Trainersvault (Web)
+    date: '2017-03-29'
+    category: Interface
+- Homify:
+    _slug: homify
+    name: Homify
+    image: "/samples/content_entries/ListingProductsbycategory.png"
+    description: "<p></p><p>Homify is an architecture and design portal that connects
+      users and professionals worldwide. Those looking for inspiration for their home
+      are guaranteed to find it here: more than 100,000 professionals from around
+      the world, including architects, interior designers and furniture designers,
+      use the platform as a portfolio.</p><p>&nbsp; &nbsp; &nbsp;The most exciting
+      projects, as well as tips &amp; tricks on architecture, construction and housing,
+      are featured regularly in the magazine. From your dream kitchen to creative
+      garden ideas - all projects, with a collective 1,000,000 images, can be saved
+      and annotated in your own ideabook, so that no source of inspiration is lost.<br>&nbsp;
+      &nbsp; Whether laying a new floor, renovating the bathroom or cultivating your
+      winter garden, at homify not only can you find the right expert for the job
+      but you can also contact them.</p><br><br><p></p>"
+    ruby_version: 2.3.0
+    rails_version: 4.2.0
+    other_technology: HTML, CSS, Jquery
+    database: PostgresDB
+    rubygems_used: devise, bottstrap-sass
+    versioning: GIT
+    client: Phillip
+    category: Interface

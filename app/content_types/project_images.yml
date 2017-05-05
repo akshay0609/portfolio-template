@@ -1,0 +1,29 @@
+name: Project images
+slug: project_images
+description: A description of the content type for the editors
+label_field_name: image
+order_by: _position
+order_direction: asc
+public_submission_enabled: false
+public_submission_account_emails: []
+fields:
+- name:
+    label: Name
+    type: string
+    required: true
+    hint: Explanatory text displayed in the back office
+    localized: false
+- image:
+    label: Image
+    type: file
+    required: true
+    hint: Explanatory text displayed in the back office
+    localized: false
+- project:
+    label: Project
+    type: belongs_to
+    required: false
+    hint: A description of the relationship for the editors
+    localized: false
+    target: projects
+    ui_enabled: true

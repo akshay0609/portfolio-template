@@ -1,0 +1,72 @@
+- Article 1:
+    _slug: sample-1
+    title: Article 1
+    description: "<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+      tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+      justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec
+      sed odio dui.Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+      tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+      justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec
+      sed odio dui.<br><br>Donec id elit non mi porta gravida at eget metus. Fusce
+      dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+      massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+      Donec sed odio dui.Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+      tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+      justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec
+      sed odio dui.Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+      tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+      justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec
+      sed odio dui.Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+      tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+      justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.<br><br><br></p><br>"
+    image: "/samples/content_entries/legal-article-2.jpg"
+    date: '2017-04-20'
+    author: Est ratione iste architecto aut.
+- Article 2:
+    _slug: article-2
+    title: Article 2
+    description: "<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+      tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+      justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec
+      sed odio dui.Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+      tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+      justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec
+      sed odio dui.<br><br>Donec id elit non mi porta gravida at eget metus. Fusce
+      dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+      massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+      Donec sed odio dui.Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+      tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+      justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec
+      sed odio dui.Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+      tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+      justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec
+      sed odio dui.Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+      tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+      justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.<br><br><br></p>"
+    image: "/samples/content_entries/legal-article-2.jpg"
+    date: '2017-04-26'
+    author: Aut praesentium optio nihil officiis suscipit neque vero architecto.
+- Article 3:
+    _slug: article-3
+    title: Article 3
+    description: "<p></p><p>Donec id elit non mi porta gravida at eget metus. Fusce
+      dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+      massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+      Donec sed odio dui.Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+      tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+      justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec
+      sed odio dui.<br><br>Donec id elit non mi porta gravida at eget metus. Fusce
+      dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+      massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+      Donec sed odio dui.Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+      tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+      justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec
+      sed odio dui.Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+      tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+      justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec
+      sed odio dui.Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+      tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
+      justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.<br><br><br></p><br><p></p>"
+    image: "/samples/content_entries/legal-article-2.jpg"
+    date: '2017-04-26'
+    author: Aut praesentium optio nihil officiis suscipit neque vero architecto.

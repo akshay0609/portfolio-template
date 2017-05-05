@@ -1,0 +1,36 @@
+- Akshay:
+    _slug: akshay
+    name: Akshay
+    email: a@a.com
+    phone: '1111111111111'
+    message: Test
+- Akshay:
+    _slug: akshay-1
+    name: Akshay
+    email: as06090609@gmail.com
+    phone: '777777777777'
+    message: HEllo yar
+- Akshay:
+    _slug: akshay-2
+    name: Akshay
+    email: as06090609@gmail.com
+    phone: '165345456'
+    message: hellooasasdfasdf
+- Akshay:
+    _slug: akshay-3
+    name: Akshay
+    email: as06090609@gmail.com
+    phone: '111111'
+    message: hjsadhfkjashdkf etst
+- Akshay:
+    _slug: akshay-5
+    name: Akshay
+    email: as06090609@gmail.com
+    phone: '165345456'
+    message: sadasdfsdf
+- Akshay:
+    _slug: akshay-6
+    name: Akshay
+    email: as06090609@gmail.com
+    phone: '111111'
+    message: asaaaaaaaa
