@@ -111,7 +111,7 @@ editable_elements:
           {% editable_model "projects", hint: "Displayed in the portfolio" %}
           {% for project in contents.projects %}
           <div class='col-sm-4 portfolio-item'>
-            <a class='portfolio-link' data-toggle='modal' href='#portfolioModal{{ forloop.index0 }}'>
+            <a class='portfolio-link' href='/project?name={{ project.name }}'>
               <div class='caption'>
                 <div class='caption-content'>
                   <i class='fa fa-search-plus fa-3x'></i>
@@ -205,14 +205,14 @@ editable_elements:
               <!-- {% include "social_links" %} -->
               {% editable_text "company_link" %}<a style="color: white; font-size:16px" class="text-center">www.nesofttech.com</a>{% endeditable_text %}
             </div>
-            <div class='footer-col col-md-4'>
+            <!-- <div class='footer-col col-md-4'>
               {% editable_text template %}
               <h3>About Freelancer</h3>
               <p>
                 Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>
               </p>
               {% endeditable_text %}
-            </div>
+            </div> -->
           </div>
         </div>
         {% endblock %}

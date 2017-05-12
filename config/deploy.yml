@@ -1,5 +1,0 @@
-production:
-  host: #locomotive_app_urlhttp://43.241.63.15:5555
-  handle: #site_handle_name
-  email: #locomotive_user_name
-  api_key: #locomotive_user_api

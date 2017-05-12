@@ -1,0 +1,126 @@
+---
+title: Projects
+
+# true if the page is included in the menu
+listed: true
+
+# true if the page is published
+published: true
+
+# true if the page can be used as a layout for new pages created by the editors
+# is_layout: true
+
+# position among sibling pages
+# position: 1
+
+# sets a redirection to the given url (301)
+# redirect_url: "<url to a page or to a remote url>"
+
+# other unique identifier of this page. To be used with the path_to liquid tag.
+# handle: my-page-handle
+
+# content type that this page is templatizing
+# content_type: "<slug of one of the content types>"
+
+
+# editable_elements:
+#   'some_block/some_slug': "<text>"
+#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+
+# Control the display of the page in the back-office.
+# display_settings:
+#   hidden: true          # hidden for authors?
+---
+
+{% extends 'index' %}
+
+{% block main %}
+
+{% editable_model projects %}
+  <section style="margin-top: 2%">
+	  <div class='container'>
+	  	{% for project in contents.projects %}
+		  	{% if project.name == params.name %}
+		      <div class='text-center container'>
+		        <div class='row'>
+		          <div class='col-lg-8 col-lg-offset-2'>
+		              <h2 class="text-center">{{ project.name }}</h2>
+		              <hr class='star-primary'>
+		                <div id="portfolioModal{{ forloop.index0 }}" class="carousel slide" data-ride="carousel">
+		                    <!-- Wrapper for slides -->
+		                    <div class="carousel-inner" role="listbox">
+		                      <div class="item active">
+		                        <img class='img-responsive img-centered' src='{{ project.image.url }}'>
+		                      </div>
+		                      {% for project_image in project.project_images %}  
+		                        <div class="item">
+		                          <img class='img-responsive img-centered' src='{{project_image.image.url}}'>
+		                        </div>
+		                      {% endfor %}
+		                    </div>
+		                    <!-- Left and right controls -->
+		                    <a class="left carousel-control" href="#portfolioModal{{ forloop.index0 }}" role="button" onclick="$('#portfolioModal{{ forloop.index0 }}').carousel('prev');" data-slide="prev">
+		                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		                      <span class="sr-only">Previous</span>
+		                    </a>
+		                    <a class="right carousel-control" href="#portfolioModal{{ forloop.index0 }}" role="button" onclick="$('#portfolioModal{{ forloop.index0 }}').carousel('next');" data-slide="next">
+		                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		                      <span class="sr-only">Next</span>
+		                    </a>
+		                  </div><br>
+		                <div class='text'>
+		                  {{ project.description }}
+		                  <table class="table table-bordered">
+		                    <tbody>
+		                        <tr>
+		                            <td>Ruby Version</td>
+		                            <td>{{project.ruby_version}}</td>
+		                        </tr>
+		                        <tr>
+		                            <td>Rails Version</td>
+		                            <td>{{project.rails_version}}</td>
+		                        </tr>
+		                        <tr>
+		                            <td>Other Technology</td>
+		                            <td>{{project.other_technology}}</td>
+		                        </tr>
+		                        <tr>
+		                            <td>Database</td>
+		                            <td>{{project.database}}</td>
+		                        </tr>
+		                        <tr>
+		                            <td>Rubygems Used</td>
+		                            <td>{{project.rubygems_used}}</td>
+		                        </tr>
+		                        <tr>
+		                            <td>Versioning</td>
+		                            <td>{{project.versioning}}</td>
+		                        </tr>
+		                    </tbody>
+		                </table>
+		                </div>
+		                <ul class='list-inline item-details'>
+		                  <li>
+		                    Client:
+		                    <strong>{{ project.client }}</strong>
+		                  </li>
+		                  <li>
+		                    Date:
+		                    <strong>{{ project.date | format_date: '%Y' }}</strong>
+		                  </li>
+		                  <li>
+		                    Category:
+		                    <strong>{{ project.category }}</strong>
+		                  </li>
+		                </ul>
+		              </hr>
+		          </div>
+		        </div>
+		      </div>
+		  {% endif %}
+	  {% endfor %}
+	  </div>
+	</section>
+{% endeditable_model %}
+
+{% endblock %}
