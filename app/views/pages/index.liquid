@@ -101,27 +101,59 @@ editable_elements:
     <section id='portfolio'>
       <div class='container'>
         {% block portfolio, short_name: true %}
+        
         <div class='row'>
           <div class='col-lg-12 text-center'>
             <h2>{% editable_text title, inline: true, rows: 1 %}Portfolio{% endeditable_text %}</h2>
             <hr class='star-primary'>
           </div>
         </div>
+
         <div class='row'>
-          {% editable_model "projects", hint: "Displayed in the portfolio" %}
-          {% for project in contents.projects %}
-          <div class='col-sm-4 portfolio-item'>
-            <a class='portfolio-link' href='/project?name={{ project.name }}'>
-              <div class='caption'>
-                <div class='caption-content'>
-                  <i class='fa fa-search-plus fa-3x'></i>
-                </div>
-              </div>
-              <img class='img-responsive' src='{{ project.image.url }}'>
+        <div class='col-md-12'>
+          <div class="carousel slide media-carousel" id="media">
+            <div class="carousel-inner">
+
+          
+             {% editable_model "projects", hint: "Displayed in the portfolio" %}
+                {% for project in (contents.projects) limit:6 %}
+                  {% assign count  = forloop.index0 | modulo: 3 %}
+                  {% if count < 1 %}
+                    {% if forloop.first %}
+                     <div class="item active"> 
+                      <div class="row">
+                    {% else %}
+                     <div class="item">
+                      <div class="row">
+                    {% endif %}  
+                  {% endif %} 
+                  <div class="col-md-4">
+                    <a class='thumbnail' href='/project?name={{ project.name }}'>
+                      <!-- <div class='caption'>
+                        <div class='caption-content'>
+                          <i class='fa fa-search-plus fa-3x'></i>
+                        </div>
+                      </div> -->
+                      <img class='img-responsive' src='{{ project.image.url }}'>
+                    </a>   
+                  </div>  
+                  {% if count > 1 %}
+                      </div>
+                    </div>
+                  {% endif %} 
+                {% endfor %}
+              {% endeditable_model %}
+            </div>  
+            <a class="left carousel-control" href="#media" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
             </a>
+            <a class="right carousel-control" href="#media" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>                        
           </div>
-          {% endfor %}
-          {% endeditable_model %}
+        </div>
         </div>
         {% endblock %}
       </div>
