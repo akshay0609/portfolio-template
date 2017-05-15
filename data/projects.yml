@@ -74,3 +74,75 @@
     versioning: GIT
     client: Phillip
     category: Interface
+- Homify1:
+    _slug: homify
+    name: Homify1
+    image: "/samples/content_entries/ListingProductsbycategory.png"
+    description: "<p></p><p>Homify is an architecture and design portal that connects
+      users and professionals worldwide. Those looking for inspiration for their home
+      are guaranteed to find it here: more than 100,000 professionals from around
+      the world, including architects, interior designers and furniture designers,
+      use the platform as a portfolio.</p><p>&nbsp; &nbsp; &nbsp;The most exciting
+      projects, as well as tips &amp; tricks on architecture, construction and housing,
+      are featured regularly in the magazine. From your dream kitchen to creative
+      garden ideas - all projects, with a collective 1,000,000 images, can be saved
+      and annotated in your own ideabook, so that no source of inspiration is lost.<br>&nbsp;
+      &nbsp; Whether laying a new floor, renovating the bathroom or cultivating your
+      winter garden, at homify not only can you find the right expert for the job
+      but you can also contact them.</p><br><br><p></p>"
+    ruby_version: 2.3.0
+    rails_version: 4.2.0
+    other_technology: HTML, CSS, Jquery
+    database: PostgresDB
+    rubygems_used: devise, bottstrap-sass
+    versioning: GIT
+    client: Phillip
+    category: Interface
+- Homify2:
+    _slug: homify
+    name: Homify2
+    image: "/samples/content_entries/ListingProductsbycategory.png"
+    description: "<p></p><p>Homify is an architecture and design portal that connects
+      users and professionals worldwide. Those looking for inspiration for their home
+      are guaranteed to find it here: more than 100,000 professionals from around
+      the world, including architects, interior designers and furniture designers,
+      use the platform as a portfolio.</p><p>&nbsp; &nbsp; &nbsp;The most exciting
+      projects, as well as tips &amp; tricks on architecture, construction and housing,
+      are featured regularly in the magazine. From your dream kitchen to creative
+      garden ideas - all projects, with a collective 1,000,000 images, can be saved
+      and annotated in your own ideabook, so that no source of inspiration is lost.<br>&nbsp;
+      &nbsp; Whether laying a new floor, renovating the bathroom or cultivating your
+      winter garden, at homify not only can you find the right expert for the job
+      but you can also contact them.</p><br><br><p></p>"
+    ruby_version: 2.3.0
+    rails_version: 4.2.0
+    other_technology: HTML, CSS, Jquery
+    database: PostgresDB
+    rubygems_used: devise, bottstrap-sass
+    versioning: GIT
+    client: Phillip
+    category: Interface
+- Homify3:
+    _slug: homify3
+    name: Homify3
+    image: "/samples/content_entries/ListingProductsbycategory.png"
+    description: "<p></p><p>Homify is an architecture and design portal that connects
+      users and professionals worldwide. Those looking for inspiration for their home
+      are guaranteed to find it here: more than 100,000 professionals from around
+      the world, including architects, interior designers and furniture designers,
+      use the platform as a portfolio.</p><p>&nbsp; &nbsp; &nbsp;The most exciting
+      projects, as well as tips &amp; tricks on architecture, construction and housing,
+      are featured regularly in the magazine. From your dream kitchen to creative
+      garden ideas - all projects, with a collective 1,000,000 images, can be saved
+      and annotated in your own ideabook, so that no source of inspiration is lost.<br>&nbsp;
+      &nbsp; Whether laying a new floor, renovating the bathroom or cultivating your
+      winter garden, at homify not only can you find the right expert for the job
+      but you can also contact them.</p><br><br><p></p>"
+    ruby_version: 2.3.0
+    rails_version: 4.2.0
+    other_technology: HTML, CSS, Jquery
+    database: PostgresDB
+    rubygems_used: devise, bottstrap-sass
+    versioning: GIT
+    client: Phillip
+    category: Interface        
