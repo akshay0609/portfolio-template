@@ -10,6 +10,7 @@ editable_elements:
   menu/portfolio: Portfolio
   menu/about: About
   menu/articles: Articles
+  menu/faqs: FAQ's
   menu/contact: Contact
   main/header/picture: "/samples/pages/Ruby_on_Rails-logo.png"
   main/header/name: Ruby on Rails
@@ -38,6 +39,7 @@ editable_elements:
     <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
     {{ 'bootstrap.min.css' | stylesheet_tag }}
     {{ 'freelancer.css' | stylesheet_tag }}
+    {{ 'project_carousel.css' | stylesheet_tag }}
     {% include 'theme_css' %}
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -54,7 +56,8 @@ editable_elements:
             <span class='icon-bar'></span>
             <span class='icon-bar'></span>
           </button>
-          <a class='navbar-brand' href='#page-top'>{{ site.name }}</a>
+          <!-- <a class='navbar-brand' href='#page-top'>{{ site.name }}</a> -->
+          <a class='navbar-brand' href='/'>{{ site.name }}</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         {% capture home_path %}{% path_to home %}{% endcapture %}
@@ -65,13 +68,20 @@ editable_elements:
               <a href='{{ home_path }}#page-top'></a>
             </li>
             <li>
-              <a href='{{ home_path }}#portfolio'>{% editable_text portfolio, format: raw, rows: 1 %}Portfolio{% endeditable_text %}</a>
+              <!-- <a href='{{ home_path }}#portfolio'>{% editable_text portfolio, format: raw, rows: 1 %}Portfolio{% endeditable_text %}</a> -->
+              <a href='/projects'>{% editable_text portfolio, format: raw, rows: 1 %}Portfolio{% endeditable_text %}</a>
             </li>
             <li>
-              <a href='{{ home_path }}#about'>{% editable_text about, format: raw, rows: 1 %}About{% endeditable_text %}</a>
+              <!-- <a href='{{ home_path }}#about'>{% editable_text about, format: raw, rows: 1 %}About{% endeditable_text %}</a> -->
+              <a href='/about'>{% editable_text about, format: raw, rows: 1 %}About{% endeditable_text %}</a>
             </li>
             <li>
-              <a href='{{ home_path }}#articles'>{% editable_text articles, format: raw, rows: 1 %}Articles{% endeditable_text %}</a>
+              <!-- <a href='{{ home_path }}#articles'>{% editable_text articles, format: raw, rows: 1 %}Articles{% endeditable_text %}</a> -->
+              <a href='/articles'>{% editable_text articles, format: raw, rows: 1 %}Articles{% endeditable_text %}</a>
+            </li>
+            <li>
+              <!-- <a href='{{ home_path }}#articles'>{% editable_text articles, format: raw, rows: 1 %}Articles{% endeditable_text %}</a> -->
+              <a href='/faqs'>{% editable_text faq, format: raw, rows: 1 %}FAQ's{% endeditable_text %}</a>
             </li>
             <!-- <li>
               <a href='{{ home_path }}#contact'>{% editable_text contact, format: raw, rows: 1 %}Contact{% endeditable_text %}</a>
@@ -98,7 +108,7 @@ editable_elements:
         </div>
       </div>
     </header>
-    <section id='portfolio'>
+<!--     <section id='portfolio'>
       <div class='container'>
         {% block portfolio, short_name: true %}
         
@@ -114,11 +124,10 @@ editable_elements:
           <div class="carousel slide media-carousel" id="media">
             <div class="carousel-inner">
 
-          
              {% editable_model "projects", hint: "Displayed in the portfolio" %}
                 {% for project in (contents.projects) limit:6 %}
-                  {% assign count  = forloop.index0 | modulo: 3 %}
-                  {% if count < 1 %}
+                  {% assign project_count  = forloop.index0 | modulo: 3 %}
+                  {% if project_count < 1 %}
                     {% if forloop.first %}
                      <div class="item active"> 
                       <div class="row">
@@ -129,15 +138,15 @@ editable_elements:
                   {% endif %} 
                   <div class="col-md-4">
                     <a class='thumbnail' href='/project?name={{ project.name }}'>
-                      <!-- <div class='caption'>
+                      <div class='caption'>
                         <div class='caption-content'>
                           <i class='fa fa-search-plus fa-3x'></i>
                         </div>
-                      </div> -->
+                      </div>
                       <img class='img-responsive' src='{{ project.image.url }}'>
                     </a>   
                   </div>  
-                  {% if count > 1 %}
+                  {% if project_count > 1 %}
                       </div>
                     </div>
                   {% endif %} 
@@ -157,8 +166,8 @@ editable_elements:
         </div>
         {% endblock %}
       </div>
-    </section>
-    <section class='success' id='about'>
+    </section> -->
+    <!-- <section class='success' id='about'>
       <div class='container'>
         {% block about, short_name: true %}
         <div class='row'>
@@ -181,8 +190,8 @@ editable_elements:
         </div>
         {% endblock %}
       </div>
-    </section>
-    <section id='articles'>
+    </section> -->
+    <!-- <section id='articles'>
       <div class='container'>
         {% block articles, short_name: true %}
           <div class='row'>
@@ -204,7 +213,7 @@ editable_elements:
           </div>
         {% endblock %}
       </div>
-    </section>
+    </section> -->
     <!-- <section id='contact'>
       <div class='container'>
         {% block contact, short_name: true %}

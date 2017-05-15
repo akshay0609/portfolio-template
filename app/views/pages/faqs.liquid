@@ -1,0 +1,58 @@
+---
+title: Faqs
+
+# true if the page is included in the menu
+listed: true
+
+# true if the page is published
+published: true
+
+# true if the page can be used as a layout for new pages created by the editors
+# is_layout: true
+
+# position among sibling pages
+# position: 1
+
+# sets a redirection to the given url (301)
+# redirect_url: "<url to a page or to a remote url>"
+
+# other unique identifier of this page. To be used with the path_to liquid tag.
+# handle: my-page-handle
+
+# content type that this page is templatizing
+# content_type: "<slug of one of the content types>"
+
+
+# editable_elements:
+#   'some_block/some_slug': "<text>"
+#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+
+# Control the display of the page in the back-office.
+# display_settings:
+#   hidden: true          # hidden for authors?
+---
+{% extends parent %}
+
+{% block main %}
+  <section class="container">
+  		{% editable_model "faqs", hint: "Displayed in the faqs" %}
+	      <div class='row'>
+	        <div class='col-lg-12 text-center'>
+	          <h2>{% editable_text title, inline: true, rows: 1 %}Frequently Asked Questions{% endeditable_text %}</h2>
+	          <hr class='star-primary'>
+	        </div>
+	      </div>
+	      <ul>
+	      {% for faq in contents.faqs %}
+		      <li>
+						<h4><span class="question">{{faq.question}}</span></h4>
+						<div class="answer" >
+							<p>{{faq.answer}}</p>
+						</div>
+						<hr>
+					</li>
+				{% endfor %}
+				</ul>
+			{% endeditable_model %}	
+	</section>
+{% endblock %}

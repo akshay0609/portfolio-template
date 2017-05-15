@@ -36,9 +36,9 @@ published: true
 
 {% block main %}
 
-{% editable_model projects %}
-  <section style="margin-top: 2%">
-	  <div class='container'>
+{% editable_model project %}
+  <section style="margin-top: 2%"	>
+	  <div class='container' >
 	  	{% for project in contents.projects %}
 		  	{% if project.name == params.name %}
 		      <div class='text-center container'>

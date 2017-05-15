@@ -1,0 +1,67 @@
+---
+title: About
+
+# true if the page is included in the menu
+listed: true
+
+# true if the page is published
+published: true
+
+# true if the page can be used as a layout for new pages created by the editors
+# is_layout: true
+
+# position among sibling pages
+# position: 1
+
+# sets a redirection to the given url (301)
+# redirect_url: "<url to a page or to a remote url>"
+
+# other unique identifier of this page. To be used with the path_to liquid tag.
+# handle: my-page-handle
+
+# content type that this page is templatizing
+# content_type: "<slug of one of the content types>"
+
+
+# editable_elements:
+#   'some_block/some_slug': "<text>"
+#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+
+# Control the display of the page in the back-office.
+# display_settings:
+#   hidden: true          # hidden for authors?
+---
+{% extends 'index' %}
+
+{% block main %}
+
+  <section id='about'>
+    <div class='container'>
+      {% block about, short_name: true %}
+      <div class='row'>
+        <div class='col-lg-12 text-center'>
+          <h2>{% editable_text title, inline: true, rows: 1 %}About{% endeditable_text %}</h2>
+          <hr class='star-primary'>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-lg-12 text-center'>
+          {% editable_text column_1, format: html %}
+          <p>Established in 1996 Neosoft Technologies is a complete IT solutions company, providing software development and IT services to corporations worldwide. Neosoft's world-class offshore services offer cutting-edge IT solutions across a range of industry and  technology segments to Enterprises and Independent Software Vendors (ISVs).</p>
+          <hr>
+          <p>Neosoft has the capability, expertise, experience to delight every customer. We work very hard in constantly improving our processes, making sure we deliver quality products to our customers. We also believe that successful outsourcing is the result of a successful partnership between the customer and the offshore vendor.</p>
+          <hr>
+          <p>Equipped with highly skilled workforce and immense resources, we provide clients with quality solutions and top-notch customer service. Our competitive development costs are sure to improve the productivity and profits of the clients. We ensure that all the clients get the best services irrespective of their business status or background.</p>
+          {% endeditable_text %}
+        </div>
+       <!--  <div class='col-lg-4'>
+          {% editable_text column_2, format: html %}
+          <p>Equipped with highly skilled workforce and immense resources, we provide clients with quality solutions and top-notch customer service. Our competitive development costs are sure to improve the productivity and profits of the clients. We ensure that all the clients get the best services irrespective of their business status or background.</p>
+          {% endeditable_text %}
+        </div> -->
+      </div>
+      {% endblock %}
+    </div>
+  </section>
+
+{% endblock %}
